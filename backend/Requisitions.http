@@ -1,0 +1,25 @@
+# Criar um dev
+POST http://localhost:3333/devs HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "adas54a6das"
+}
+
+###
+# Curtir dev
+POST http://localhost:3333/devs/5d49c1870b0e242ceeeb745f/likes HTTP/1.1
+user: 5d4a41cf6a2f5114683d7d9e
+Content-Type: application/json
+
+###
+# Descurtir Dev
+POST http://localhost:3333/devs/5d49c1870b0e242ceeeb745f/dislikes HTTP/1.1
+user: 5d4a360528f5040eca044ce1
+Content-Type: application/json
+
+###
+# Listagem de devs
+GET http://localhost:3333/devs HTTP/1.1
+user: 5d4a41cf6a2f5114683d7d9e
+Content-Type: application/json
