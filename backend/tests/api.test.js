@@ -68,10 +68,6 @@ describe('server', () => {
     })
 
     it('Should create an user if not already exists passing the github username', async () => {
-      const expectedReturn = {
-        "error": "Usuário já existe."
-      }
-
       sandbox.stub(devModel, devModel.findOne.name)
         .resolves(null)
 
@@ -85,7 +81,7 @@ describe('server', () => {
         .post('/devs')
         .send('{ "username": "piccoloo" }')
 
-      assert.deepStrictEqual(response.body, { message: 'Usuário cadastrado' })
+      assert.deepStrictEqual(response.body, createdDev)
     })
   })
 })
