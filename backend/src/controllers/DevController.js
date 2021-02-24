@@ -23,16 +23,18 @@ module.exports = {
 
     const userExists = await Dev.findOne({ user: username })
 
-    if (userExists) {
-      console.log('Usuário já existe.')
-      return res.json(userExists)
+    if (userExists !== null) {
+      return res.json({
+        error: 'Usuário já existe.'
+      })
     }
 
     try {
       var response = await axios.get(`https://api.github.com/users/${username}`)
     } catch (error) {
-      console.log('Erro not found.')
-      return res.status(404).end()
+      return res.status(404).json({
+        error: 'User not found'
+      })
     }
 
     const { name, bio, avatar_url: avatar } = response.data
@@ -44,7 +46,6 @@ module.exports = {
       avatar
     })
 
-    console.log('Usuário criado!')
     return res.json(dev)
   }
 }

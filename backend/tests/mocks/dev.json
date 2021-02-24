@@ -1,0 +1,23 @@
+{
+  "likes": [],
+  "dislikes": [],
+  "_id": "5e1e4235d17e4c72b47e9661",
+  "techs": [
+    "ReactJS",
+    "Node.js",
+    "React Native"
+  ],
+  "github_username": "diego3g",
+  "name": "Diego",
+  "avatar_url": "https://avatars2.githubusercontent.com/u/2254731?v=4",
+  "bio": "CTO na @Rocketseat. Apaixonado pelas melhores tecnologias de desenvolvimento web e mobile.",
+  "location": {
+    "coordinates": [
+      -37.0610866,
+      -10.9152716
+    ],
+    "_id": "5e1e4235d17e4c72b47e9662",
+    "type": "Point"
+  },
+  "__v": 0
+}

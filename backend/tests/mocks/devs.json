@@ -1,0 +1,49 @@
+[
+  {
+    "likes": [],
+    "dislikes": [],
+    "_id": "5e1fd169e15477172b78d166",
+    "techs": [
+      "ReactJS",
+      "Node.js",
+      "React Native"
+    ],
+    "github_username": "AntonioHamilton",
+    "name": null,
+    "avatar_url": "https://avatars2.githubusercontent.com/u/48774981?v=4",
+    "bio": null,
+    "location": {
+      "coordinates": [
+        -37.0726599,
+        -10.156488548
+      ],
+      "_id": "5e1fd169e15477172b78d167",
+      "type": "Point"
+    },
+    "__v": 0
+  },
+  {
+    "likes": [],
+    "dislikes": [],
+    "_id": "5e239a63740e1e3cf57cdf1e",
+    "techs": [
+      "ReactJS",
+      "Node.js",
+      "React Native",
+      "PHP"
+    ],
+    "github_username": "angelo848",
+    "name": "Ângelo Gonçalves Salles",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/39395681?v=4",
+    "bio": "Estudante de Sistemas de Informação. Apaixonado por programação.",
+    "location": {
+      "coordinates": [
+        -37.0727018,
+        -10.8511466
+      ],
+      "_id": "5e239a64740e1e3cf57cdf1f",
+      "type": "Point"
+    },
+    "__v": 0
+  }
+]
