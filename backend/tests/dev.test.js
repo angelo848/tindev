@@ -3,12 +3,12 @@ const { createSandbox } = require('sinon')
 const assert = require('assert')
 const request = require('supertest')
 const devsMock = require('./mocks/devs.json')
-const server = require('./../src/server')
 const devModel = require('./../src/models/Dev')
 const axios = require('axios')
 const devMock = require('./mocks/dev.json')
 const createdDev = require('./mocks/createdDev.json')
 const githubUser = require('./mocks/githubUser.json')
+const server = require('../src/server')
 
 describe('server', () => {
   let sandbox
